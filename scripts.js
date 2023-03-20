@@ -28,7 +28,12 @@ let userSize = Number(prompt('Type how many squares you want your canvas to have
 while (userSize >100 ) {
     const userSize = Number(prompt('Number must be less than 100'));
 
-} makeDivs(userSize * userSize);
+} 
+//automatically size container grid rows and columns based on userSize
+container.style.gridTemplateRows = `repeat(${userSize}, 1fr)`;
+container.style.gridTemplateColumns = `repeat(${userSize}, 1fr)`;
+
+makeDivs(userSize * userSize);
 })
 
 
