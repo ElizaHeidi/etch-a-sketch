@@ -14,15 +14,16 @@ h1 {
 
   #container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+    grid-template-columns: repeat(16, auto);
     border: 3px solid goldenrod;
     }
 
-    #container > div {
-    height: 75px;
-    width: 75px;
+  #container > div   {
+    height: 32px;
+    width: 32px;
     border: 1px solid coral;
     background-color: pink;
     }
 
-   
+    /* #container > div:hover {
+      background-color: goldenrod; */
